@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import pana from "./Assets/pana.png";
+import Pin from "./components/Pin";
 
 function App() {
+  const [otp, setOtp] = useState("");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <img src={pana} alt="" />
+      <div>
+        <p>Code sent to +91 9087654321</p>
+        <Pin length={5} setOtp={setOtp} />
+        <p>{otp}</p>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Didn't recieve code? <span>Request again</span>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <button>Continue</button>
+      </div>
     </div>
   );
 }

@@ -1,38 +1,40 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  width: 400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  border: 1px solid rgb(181, 176, 176);
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  margin: 0.5rem;
+  text-align: center;
+  font-size: 17px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+span {
+  font-weight: bold;
+}
+
+button {
+  background-color: rgb(255,114,94);
   color: white;
+  border: 0px;
+  border-radius: 35px;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  padding: 10px 25px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: rgb(227, 80, 61);
 }
